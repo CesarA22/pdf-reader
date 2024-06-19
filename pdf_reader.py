@@ -30,6 +30,6 @@ def extrair_txt(pdf_path, txt_path):
     print(f'Arquivo texto criado neste caminho {txt_path}')
 
 # Exemplo de uso, substituir com o caminho do arquivo PDF e do txt
-pdf_path = 'C:/pdftotxt/pdf1.pdf' # Caminho do arquivo PDF
-txt_path = 'C:/pdftotxt/text2.txt' # Caminho do arquivo txt
+pdf_path = 'C:/pdftotxt/pdf1.pdf' # Caminho do arquivo PDF, altere para o que seu pdf de escolha esta atualmente
+txt_path = 'C:/pdftotxt/text2.txt' # Caminho do arquivo txt, onde o txt será criado/atualizado (De preferencia na mesma pasta do PDF)
 extrair_txt(pdf_path, txt_path)
