@@ -1,10 +1,11 @@
 import pdfplumber
+from tqdm import tqdm
 
 def is_header_or_footer(y, page_height):
     """
     Funcao para determinar se o texto e um cabeçalho ou rodape baseado na posicao Y.
     """
-    margin = input ("Por favor, insira a margem de topo e fundo desejada (px): ") 
+    margin = 35
     if y < margin or y > page_height - margin:
         return True
     return False
@@ -12,7 +13,7 @@ def is_header_or_footer(y, page_height):
 def extrair_txt(pdf_path, txt_path):
     with pdfplumber.open(pdf_path) as pdf:
         body_text = ""
-        for page in pdf.pages:
+        for page in tqdm(pdf.pages, desc="Extraindo texto", ncols=70):
             page_height = page.height
             page_width = page.width
             page_text = ""
