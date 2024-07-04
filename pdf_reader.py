@@ -5,7 +5,7 @@ def is_header_or_footer(y, page_height):
     """
     Funcao para determinar se o texto e um cabeçalho ou rodape baseado na posicao Y.
     """
-    margin = 35
+    margin = 35 # Margem fixa, melhor deixar assim, ja que é universal
     if y < margin or y > page_height - margin:
         return True
     return False
