@@ -11,7 +11,8 @@ Para instalar o PDF Reader, siga estas etapas:
 
 (Antes, certifique-se de ter o python instalado em seu PC)
 
+Rode o comando: 
 ```
-Rode o comando: "pip install pdfplumber tqdm"
+pip install pdfplumber tqdm
 ```
 Após isso, rode o código no terminal e especifique a margem (em pixels) desejada e o caminho do pdf e do txt desejados. (Lembre-se de inserir o nome do txt no caminho também para não ocorrer erro de permissão!).
