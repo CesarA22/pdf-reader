@@ -14,5 +14,4 @@ Para instalar o PDF Reader, siga estas etapas:
 ```
 Rode o comando: "pip install pdfplumber"
 ```
-
-Após isso, basta rodar o código e ele irá criar um txt com os conteúdos do PDF no caminho que você especificou no código!
+Após isso, rode o código no terminal e especifique a margem (em pixels) desejada e o caminho do pdf e do txt desejados. (Lembre-se de inserir o nome do txt no caminho também para não ocorrer erro de permissão!).
